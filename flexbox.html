@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            height: 500px;
+            border: 2px dotted steelblue;
+        }
+
+        .box {
+            font-size: 3em;
+            width: 150px;
+            border: 3px dashed slateblue;
+        }
+
+        #box-1 {
+            order: 1;
+
+        }
+
+        #box-2 {
+            order: 2;
+            flex-grow: 1;
+        }
+
+        #box-3 {
+            order: 3;
+
+
+        }
+
+        #box-4 {
+            order: 4;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I am flexible right now</h1>
+    <div class="container">
+        <div id="box-1" class="box">box-1</div>
+        <div id="box-2" class="box">box-2</div>
+        <div id="box-3" class="box">box-3</div>
+        <div id="box-4" class="box">box-4</div>
+
+    </div>
+</body>
+
+</html>
